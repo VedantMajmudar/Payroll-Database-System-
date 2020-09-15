@@ -34,8 +34,8 @@ public class InitializeServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		//InitializeDao newObj = new InitializeDao();
-		//newObj.initDB();
+		InitializeDao newObj = new InitializeDao();
+		newObj.initDB();
 		response.sendRedirect( request.getContextPath() + "/jsps/user/regist.jsp");
 
 	}
